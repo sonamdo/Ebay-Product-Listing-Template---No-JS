@@ -1,0 +1,297 @@
+<html>
+
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link href='https://fonts.googleapis.com/css?family=Assistant' rel='stylesheet'>
+</head>
+
+<style>
+.container{
+font-family: 'Assistant';
+}
+
+.row{
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.bannerLinks{
+	position: absolute;
+	left: 60%;
+	top: 25%;
+}
+
+#bannerLink1, #bannerLink2{
+	display: inline;
+	padding-right: 15px;
+}
+
+.blueText{
+color: #0073e6;
+}
+
+.storeCategoryL{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-weight: bold;
+  color: white;
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 35px;
+}
+
+.links{
+ color: grey;
+ text-decoration: none;
+}
+
+.links:hover{
+ text-decoration: none;
+ color:black;
+}
+
+.storeCategoryM{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-weight: bold;
+  color: white;
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 25px;
+
+}
+
+#allCategories{
+  padding-top: 38px;
+  background-color: RGB(242,245,244);
+}
+
+#categoryButton{
+  background-color: white;
+  border: 1px solid black;
+  padding: 5px 50px 5px 50px;
+  position: absolute;
+  top:50%;
+  left:42%;
+}
+
+.col-md-6{
+  font-weight: bold;
+}
+
+li{
+padding-top: 3px;
+}
+
+ul{
+  list-style: none;
+}
+
+.darkerImg{
+filter: brightness(50%);
+}
+
+.makeBold{
+	font-weight: bold;
+}
+
+.justifyText{
+	text-align: justify;
+}
+
+#storeInfo{
+	margin-top: 40px;
+	background-color: RGB(242,245,244);
+}
+
+#banner2{
+	border-top: 2px solid grey;
+	border-bottom: 2px solid grey;
+	width: 95%;
+	margin-bottom: 45px;
+	color:grey;
+	font-weight: bold;
+	font-size: 16px;
+	padding-top: 15px;
+}
+
+.icons{
+	height:40px;
+}
+
+#bannerLink2{
+	padding: 0;
+	border: none;
+	background: none;
+}
+
+</style>
+
+
+<body>
+
+<div class="container">
+  <a href = "http://www.ebay.ca/usr/skitrader-com?_trksid=p2047675.l2559"><img src ="http://uploads.webflow.com/57ec8936af9d15040c51a795/596d00636cd83117b643e93c_9q4HvNM.png" class = "img-responsive"></a>
+</div>
+
+
+<div class = "container">
+
+ <div class = "row">
+	<div class="col-md-6">
+		<h2>{{ITEMPARENTTITLE}}</h2>
+			<h3 class = "blueText">REG US ${{ITEMRETAILPRICE}}</h3>
+	            <p>{{ITEMSHORTDESC}}</p>
+                <p>{{ITEMAUCTIONDESCRIPTION}}</p>
+	</div>
+	<div class="col-md-6">
+        <div class="main-image">
+			<img src="{{IMAGE(PARENTITEMIMAGEURL1)}}" class="img-responsive" alt="Responsive image">
+		</div>
+	</div>
+ </div>
+
+<div class = "container" id = "banner2">
+	<div class = "row">
+		<div class = "col-md-3">
+			<img src = "http://uploads.webflow.com/57ec8936af9d15040c51a795/596e6a7e3b2f6d22b2bfc8a7_ticket.jpg" class = "icons"> Low Prices
+		</div>
+		<div class = "col-md-3">
+			<img src ="http://uploads.webflow.com/57ec8936af9d15040c51a795/596e6aa63b2f6d22b2bfc8b5_check.jpg" class = "icons">100% Authentic
+		</div>
+		<div class = "col-md-3">
+			<img src = "http://uploads.webflow.com/57ec8936af9d15040c51a795/596e6a9361612b56a7043fae_drive.jpg" class = "icons">Fast Shipping & Delivery
+		</div>
+		<div class = "col-md-3">
+			<img src = "http://uploads.webflow.com/57ec8936af9d15040c51a795/596e6a88cbc94d0d7cf09f9c_email.jpg" class = "icons">Great Customer Service
+		</div>
+	</div>
+</div>
+
+  <div class = "row">
+    <div class="col-md-6">
+      <a href = "https://www.ebay.ca/sch/Cycling/7294/m.html?_nkw=&_armrs=1&_ipg=&_from=&_ssn=skitrader-com">
+       <img src="http://uploads.webflow.com/57ec8936af9d15040c51a795/596e6b5e8a859434bcc2a540_helmet.jpg" class="img-responsive darkerImg">
+        <p class = "storeCategoryL">Bike Gear and Accessories</p>
+      </a>
+    </div>
+    <div class="col-md-6">
+      <a href = "https://www.ebay.ca/sch/Winter-Sports/36259/m.html?_nkw=&_armrs=1&_ipg=&_from=&_ssn=skitrader-com">
+        <img src="http://uploads.webflow.com/57ec8936af9d15040c51a795/596e6b4de2fbfa0abe6f68ab_red-jacket.jpg" class="img-responsive darkerImg">
+          <p class = "storeCategoryL">Winter Sports</p>
+      </a>
+    </div>
+ </div>
+
+  <div class = "row">
+   <div class="col-md-3">
+    <a href = "https://www.ebay.com/sch/Womens-Clothing/15724/m.html?_nkw=&_armrs=1&_ipg=&_from=&_ssn=skitrader-com&_sac=1">
+     <img src="http://uploads.webflow.com/57ec8936af9d15040c51a795/596e6aaea7db5134590edea5_BACK.jpg" class="img-responsive darkerImg">
+      <p class = "storeCategoryM">Womens Clothing</p>
+    </a>
+   </div>
+   <div class="col-md-3">
+    <a href = "https://www.ebay.com/sch/Mens-Shoes/93427/m.html?_nkw=&_armrs=1&_ipg=&_from=&_ssn=skitrader-com&_sac=1">
+     <img src="http://uploads.webflow.com/57ec8936af9d15040c51a795/596e6b116a091a0a5dd7be93_shoes.jpg" class="img-responsive darkerImg">
+        <p class ="storeCategoryM">Mens Shoes</p>
+     </a>
+   </div>
+   <div class="col-md-3">
+    <a href = "https://www.ebay.com/sch/Mens-Clothing/1059/m.html?_nkw=&_armrs=1&_ipg=&_from=&_ssn=skitrader-com&_sac=1">
+     <img src="http://uploads.webflow.com/57ec8936af9d15040c51a795/596e6b1be2fbfa0abe6f689e_casual.jpg" class="img-responsive darkerImg">
+       <p class = "storeCategoryM">Mens Clothing</p>
+     </a>
+   </div>
+   <div class="col-md-3">
+    <a href = "https://www.ebay.com/sch/Womens-Shoes/3034/m.html?_nkw=&_armrs=1&_ipg=&_from=&_ssn=skitrader-com&_sac=1">
+     <img src="http://uploads.webflow.com/57ec8936af9d15040c51a795/596e6b2c3b2f6d22b2bfc8f7_shoes-2.jpg" class="img-responsive darkerImg">
+       <p class = "storeCategoryM">Womens Shoes</p>
+     </a>
+   </div>
+ </div>
+
+
+<div class = "row">
+  <div class = "col-md-12">
+	<h4 id ="categoryButton">All Categories</h4>
+</div>
+</div>
+
+<div id = "allCategories">
+  <div class = "row" id = "hide">
+   <div class = "col-md-2">
+     <ul>
+       <li><a href = "https://www.ebay.com/sch/Shorts/177853/m.html?_nkw=&_armrs=1&_ipg=&_from=&_ssn=skitrader-com" class = "links">Cycling Shorts</a><li>
+       <li><a href = "https://www.ebay.com/sch/Gloves/22683/m.html?_nkw=&_armrs=1&_ipg=&_from=&_ssn=skitrader-com&_sac=1" class = "links">Cycling Gloves</a><li>
+       <li><a href = "https://www.ebay.com/sch/Womens-Handbags-Bags/169291/m.html?_nkw=&_armrs=1&_ipg=&_from=&_ssn=skitrader-com" class = "links">Womens Bags</a><li>
+     <ul>
+   </div>
+   <div class = "col-md-2">
+     <ul>
+       <li><a href = "https://www.ebay.com/sch/Athletic/95672/m.html?_nkw=&_armrs=1&_ipg=&_from=&_ssn=skitrader-com&_sac=1" class = "links">Womens Sport Shoes</a><li>
+       <li><a href = "https://www.ebay.com/sch/Tops-Blouses/53159/m.html?_nkw=&_armrs=1&_ipg=&_from=&_ssn=skitrader-com&_sac=1" class = "links">Womens Tops</a><li>
+       <li><a href = "https://www.ebay.com/sch/Flats-Oxfords/45333/m.html?_nkw=&_armrs=1&_ipg=&_from=&_ssn=skitrader-com&_sac=1" class = "links">Womens Flats</a><li>
+     <ul>
+   </div>
+   <div class = "col-md-2">
+     <ul>
+   	   <li><a href = "https://www.ebay.com/sch/Athletic/15709/m.html?_nkw=&_armrs=1&_ipg=&_from=&_ssn=skitrader-com&_sac=1" class = "links">Mens Athletic Shoes</a><li>
+       <li><a href = "https://www.ebay.com/sch/Casual/24087/m.html?_nkw=&_armrs=1&_ipg=&_from=&_ssn=skitrader-com&_sac=1" class = "links">Mens Casual Shoes</a><li>
+       <li><a href = "https://www.ebay.com/sch/Mens-Clothing/1059/m.html?_nkw=&_armrs=1&_ipg=&_from=&_ssn=skitrader-com&_sac=1" class = "links">Mens Clothing</a><li>
+     <ul>
+   </div>
+   <div class = "col-md-2">
+     <ul>
+       <li><a href = "https://www.ebay.com/sch/Coats-Jackets/26346/m.html?_nkw=&_armrs=1&_ipg=&_from=&_ssn=skitrader-com&_sac=1" class = "links">Coats and Jackets</a><li>
+       <li><a href = "https://www.ebay.com/sch/Snow-Pants-Bibs/36261/m.html?_nkw=&_armrs=1&_ipg=&_from=&_ssn=skitrader-com&_sac=1" class = "links">Snow Pants</a><li>
+       <li><a href = "https://www.ebay.com/sch/Gloves-Mittens/62172/m.html?_nkw=&_armrs=1&_ipg=&_from=&_ssn=skitrader-com&_sac=1" class = "links">Gloves/Mittens</a><li>
+     <ul>
+   </div>
+   <div class = "col-md-2">
+     <ul>
+       <li><a href = "https://www.ebay.com/sch/Snowboards/93825/m.html?_nkw=&_armrs=1&_ipg=&_from=&_ssn=skitrader-com" class = "links">Snowboards</a><li>
+       <li><a href = "https://www.ebay.com/sch/Boots/36292/m.html?_nkw=&_armrs=1&_ipg=&_from=&_ssn=skitrader-com" class = "links">Snowboard Boots</a><li>
+	   <li><a href = "https://www.ebay.com/sch/Bindings/21248/m.html?_nkw=&_armrs=1&_ipg=&_from=&_ssn=skitrader-com" class = "links">Snowboard Bindings</a><li>
+     <ul>
+   </div>
+   <div class = "col-md-2">
+     <ul>
+       <li><a href = "https://www.ebay.com/sch/Boots/53557/m.html?_nkw=&_armrs=1&_ipg=&_from=&_ssn=skitrader-com&_sac=1" class = "links">Womens Boots</a><li>
+       <li><a href = "https://www.ebay.com/sch/Boots/11498/m.html?_nkw=&_armrs=1&_ipg=&_from=&_ssn=skitrader-com&_sac=1" class = "links">Mens Boots</a><li>
+       <li><a href = "https://www.ebay.com/sch/Hats-Headwear/62175/m.html?_nkw=&_armrs=1&_ipg=&_from=&_ssn=skitrader-com&_sac=1" class = "links">Headwear</a><li>
+	 <ul>
+   </div>
+  </div>
+
+</div>
+<div class = "row" id = "storeInfo">
+  <img src ="http://uploads.webflow.com/57ec8936af9d15040c51a795/596d00643393f7073120bf25_MeGGr05.png"class = "img-responsive";>
+	<div class = "col-md-3">
+	    <img src = "http://uploads.webflow.com/57ec8936af9d15040c51a795/596d006281531a1e3a1ebe7e_e8mlnPq.png">
+		<h4 class = "makeBold justifyText">We are family run and committed to providing the best customer service</h4>
+		<h4 class = "justifyText" >Established in 1978 as a ski pro shop then launched as a website for great gear deals in 1996</h4>
+	</div>
+
+	<div class ="col-md-9">
+		<h4>PAYMENT</h4>
+		<p class = "justifyText">All eBay purchases are processed with confirmed PayPal payments to confirmed addresses only. Items can be purchased from our website using your credit or interac card.</p>
+		<h4>SHIPPING</h4>
+		<p class = "justifyText">International buyers must understand, UPS acts as the customs broker for your goods. If UPS asks for a COD or sends you a bill, this is NOT additional shipping costs, this charge is import taxes, duty, VAT and brokerage fees.
+ "Signature Required" is applied to higher value packages for added delivery security and theft protection. If you do not want a "Signature Required" applied to your package please contact us directly after your purchase.
+ The Law prohibits us from sending items marked as a "gift" or mark the value down.
+		<p class = "justifyText">Canadian buyers be aware, you are subject to applicable government taxes (HST, GST, PST etc.) Listing price includes all packaging and handling fees. Shipments occur within 1-2 working days of cleared payment. We do not ship on weekends & major holidays. We ship to confirmed PayPal address only. Unconfirmed addresses are automatically declined. Additional charges are applied if you request a change of address after the package has been shipped. This address must be confirmed on PayPal. If you have received a significantly damaged package from UPS, tell the delivery agent about the items condition and discuss the options BEFORE receiving the item. Please be sure to take photos and contact a SkiTrader Store Online Sales Representative immediately so we can begin processing a claim with UPS. If unsatisfied with your purchase, please contact us via eBay message only to abide by eBay's sales policies before taking any action. Please give us the opportunity to solve any issues. This will ensure your return or claim gets handled properly and in a timely fashion.</p>
+    <p class = "justifyText">If you have received a significantly damaged package from UPS or Canada Post, tell the delivery agent (if applicable) and ask about options before receiving the item. If they item has been left at your door please contact SkiTrader Store Online Sales Representatives immediately via eBay messenger. Please do not open the package and attach photos to your message.
+    </p>
+		<h4>WARRANTY</h4>
+		<p class = "justifyText">Please contact the supplier's local store for information on warranties.</p>
+		<h4>RETURNS AND REFUNDS</h4>
+    <p class = "justifyText">If unsatisfied with your purchase, please give us the opportunity to solve any issues related to the condition of your item.</p>
+		<p class = "justifyText">All sales are final, no exchanges or returns.</p>
+	</div>
+</p><p/>
+</div>
+</div>
+</div>
+</body>
+
+</html>
